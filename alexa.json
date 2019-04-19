@@ -1,0 +1,102 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lumens",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "thank you alexa",
+                        "thanks",
+                        "close wallet",
+                        "thank you"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CheckBalanceIntent",
+                    "slots": [],
+                    "samples": [
+                        "how much xlm do i have",
+                        "how much stellar do i have",
+                        "how many stellar do I have",
+                        "check my balance",
+                        "whats my balance",
+                        "check balance"
+                    ]
+                },
+                {
+                    "name": "SendStellarIntent",
+                    "slots": [
+                        {
+                            "name": "contact",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "amount",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "send {amount} stellar to {contact}",
+                        "send {amount} XLM to {contact}",
+                        "send {contact} {amount} XLM",
+                        "send {contact} {amount} stellar"
+                    ]
+                },
+                {
+                    "name": "NetWorthIntent",
+                    "slots": [],
+                    "samples": [
+                        "net worth",
+                        "whats my net worth"
+                    ]
+                },
+                {
+                    "name": "PriceReportIntent",
+                    "slots": [],
+                    "samples": [
+                        "whats the price of stellar",
+                        "whats the price of xlm",
+                        "price of xlm",
+                        "stellar price",
+                        "xlm price",
+                        "price of stellar",
+                        "price report"
+                    ]
+                },
+                {
+                    "name": "LamboCheckIntent",
+                    "slots": [],
+                    "samples": [
+                        "how close lambo",
+                        "lambo when",
+                        "when moon",
+                        "to the moon",
+                        "lambo time",
+                        "how close am i to a lambo",
+                        "is a lambo possible in my lifetime",
+                        "lambo check",
+                        "how far away is a lambo"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
